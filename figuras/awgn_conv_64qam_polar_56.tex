@@ -1,0 +1,53 @@
+% How to use it
+%\documentclass{article}
+%\usepackage{pgfplots}
+%\usepackage{xcolor}
+%
+%\begin{document}   
+%	\begin{figure}[h!]
+%		\centering    	
+%		\scalebox{0.8}{\input{test_xyplot2tex.tex}}	
+%		\caption{Enter your caption here.}
+%		\label{test_xyplot2tex}
+%	\end{figure}  
+%\end{document}
+\definecolor{mycolor0}{rgb}{0.00,0.00,1.00}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.527in,
+at={(0.758in,0.519in)},
+scale only axis,
+xmajorgrids,
+yminorticks=true,
+ymajorgrids,
+yminorgrids,
+axis background/.style={fill=white},
+legend style={legend cell align=left,align=left,draw=white!15!black},
+xmin=0.000000,
+xmax=22.000000,
+xlabel={SNR dB},
+ymin=0.000000,
+ymax=0.249245,
+ylabel={BER},
+ymode=log]
+\addplot [color=mycolor0,solid,line width=2.0pt]
+table[row sep=crcr]{%
+0.000000000000	0.249244791667\\
+2.000000000000	0.249107812500\\
+4.000000000000	0.248364583333\\
+6.000000000000	0.247461916667\\
+8.000000000000	0.242105000000\\
+10.000000000000	0.218678229167\\
+12.000000000000	0.143872187500\\
+14.000000000000	0.090602833333\\
+16.000000000000	0.057104479167\\
+18.000000000000	0.018831562500\\
+20.000000000000	0.001376875000\\
+22.000000000000	0.000032430556\\
+};
+\addlegendentry{AWGN, 16-QAM, Conv. 5/6};
+\end{axis}
+\end{tikzpicture}%

@@ -1,0 +1,9 @@
+makefile
+*.log
+
+*.txt
+
+*.json
+
+*.pdf
+.vscode/spellright.dict
