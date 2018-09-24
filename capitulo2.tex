@@ -115,18 +115,121 @@ Muitos autores chamam atenção para fato das ferramentas de participação sere
 \par
 A \acrfull{ocde}, juntamente com a \acrshort{onu} e a \acrfull{ue} criaram \textit{frameworks} para a avaliação das ferramentas através de indicadores. 
 Atualmente, governantes podem encontrar diretrizes para seguir na hora de desenvolver uma atividade de participação eletrônica.
-
+%==================================================================================================================================================================================================
 \section{Taxonomia}
 \label{sec:taxonomia}
+Com o objetivo de apresentar um panorama conceitual sobre o termo taxonomia e contextualizar o assunto, \citeonline{novo2007elaboraccao} diz:
 
+\hspace{4cm}
+\begin{minipage}{.66\textwidth}		
+    \begin{singlespace}
+        \fontsize{10}{12}\selectfont O conceito de taxonomia não emerge de repente como uma fórmula para solucionar problemas de representar o conhecimento de um dado domínio.
+        É resultado de um longo processo histórico que se estendeu através de estudos e investigações que culminaram numa construção teórica.
+        Esta evolução não foi linear tampouco ocorreu em um mesmo momento histórico, pois um único modelo não conseguiria responder de imediato a questões tão particulares 
+        e complexas encontradas nas diversas áreas do conhecimento.
+        \end{singlespace}
+\end{minipage}
+\vspace{0.3CM}
+
+Taxonomia é, por definição, classificação, sistemática. Tradicionalmente utilizada para a classificação das espécies em botânica e zoologia, adotando uma definição binária.
+\par
+A utilização de taxonomia nos sistemas de informação não leva em consideração família, gênero ou espécie, mas sim conceitos.
+As classes e subclasses de uma taxonomia se apresentam de maneira lógica, suportada por princípios classificatórios.\cite{campos2012taxonomia}
+\par
+Um dos recursos fundamentais para a gestão da informação e do conhecimento é o desenvolvimento de taxonomias \cite{dal2015ferramentas}.
+\citeonline{aganette2010elementos} diz que diferente do princípio dicotômico adotado na taxonomia dos seres vivos, atualmente, faz-se possível a construção de taxonomias
+policotômicas, ou seja, onde um objeto é classificado em tantas classes, e subclasses quantas necessárias, dentro um domínio especializado.
+\par
+Sendo assim, podemos utilizar a representação taxonômica da Figura \ref{fig:exemploTaxonomia} para classificar um objeto, arbitrariamente escolhido,
+de acordo com as nós F e C, por exemplo.
+
+\begin{figure}[!ht]
+\begin{tikzpicture}[level 1/.style={sibling distance=5cm},level 2/.style={sibling distance=2.5cm}]
+    \node {T}
+        child { node {A}
+        child {node{D}}
+        child {node{E}}
+        child {node{F}}
+        child {node{G}}
+        child {node{H}}
+        }
+        child { node {B}}   
+        child { node {C}}  
+    ;
+\end{tikzpicture}
+\caption{Exemplo de Taxonomia}
+\label{fig:exemploTaxonomia}  
+\end{figure}
+
+%==================================================================================================================================================================================================
 \subsection{Taxonomia para Ferramentas de Participação Eletrônica}
 \label{subsec:taxonomia e-part tools}
+\par
+Por ser tratar de um assunto específico, inovador e relativamente novo, durante pesquisa para elaboração deste trabalho,
+o único exemplo de taxonomia para ferramentas de participação eletrônica encontrado foi o esquema taxonômico elaborado pelos participantes do projeto de pesquisa Vispública, 
+que será abordado na Seção \ref{subsec:taxononmiaElaborada}
 
-\subsection{Taxonomia para Outras Ferramentas}
-\label{subsec:taxonomia other tools}
+%==================================================================================================================================================================================================
+%\subsection{Taxonomia para Outras Ferramentas}
+%\label{subsec:taxonomia other tools}
 
+%==================================================================================================================================================================================================
 \subsection{Taxonomia para Outras Áreas da Computação}
 \label{subsec:taxonomia other computer areas}
+Taxonomia, no contexto da computação, tem aplicação em distintas áreas. A utilização de estruturas taxonômicas para classificar sistemas, arquiteturas e arquivos data de mais de
+cinquenta anos. Uma das classificações taxonômica com maior relevância para a área da computação é a chamada "Taxonomia de Flynn",
+onde \citeonline{flynn1966very} classificou as arquiteturas de computadores da seguinte forma:\\
 
+\begin{minipage}{.66\textwidth}
+    \begin{singlespace}
+        \begin{itemize}
+            \item \acrfull{sisd}
+            \item \acrfull{simd}
+            \item \acrfull{misd}
+            \item \acrfull{mimd}
+        \end{itemize}
+    \end{singlespace}
+\end{minipage}
+\vspace{0.5cm}
+
+\begin{figure}[!ht]
+    \begin{tikzpicture}[level 1/.style={sibling distance=5cm},level 2/.style={sibling distance=2.5cm}]
+        \node {T}
+            child { node {\acrshort{sisd}}}   
+            child { node {\acrshort{simd}}}  
+            child { node {\acrshort{misd}}}   
+            child { node {\acrshort{mimd}}}  
+        ;
+    \end{tikzpicture}
+    \caption{Taxonomia de Flynn}
+    \label{fig:taxonomiaFlynn}  
+\end{figure}
+
+\vspace{0.5cm}
+\par
+A área de tolerância a faltas, da engenharia de \textit{software}, tem taxonomias comumente adotadas para definir termos e técnicas.
+Entre as mais conhecidas estão a taxonomia proposta por \citeonline{gartner1999fundamentals}, abordando diversos conceitos e os aplicando a um cenário distribuído,
+e a taxonomia apresentada por \citeonline{avizienis2004basic}, definindo conceitos sobre tolerância a faltas e segurança computacional.
+
+\par
+\citeonline{sondhi2018taxonomy} criou uma taxonomia que pode ser usada para prever as ações ou intenções de um usuário em particular de uma dada loja virtual
+e então personalizar o algoritmo de busca para indicar as necessidades específicas desse usuário.
+
+\par
+Vale ressaltar a grande utilização de taxonomia por lojas virtuais, e o grande número de trabalhos encontrados sobre taxonomia aplicada a esse setor.
+
+%==================================================================================================================================================================================================
 \subsection{Taxonomia Elaborada}
-\label{subsec:taxonmia made}
+\label{subsec:taxononmiaElaborada}
+\par
+Por meio do projeto Vispública foi elaborada a taxonomia mostrada na Figura \ref{fig:taxonomia-vispublica}. Neste trabalho, o esforço foi no sentido de fornecer a classificação de
+ferramentas de participação através de uma taxonomia, de forma que seja possível associar uma ferramenta às dimensões propostas e também permitir uma compreensão
+geral do que existe acerca das iniciativas de e-participação identificadas na literatura.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.3]{./figuras/taxonomia-cropped.png}
+    \caption{Taxonomia elaborada pelo projeto Vispública}
+    \label{fig:taxonomia-vispublica}
+\end{figure}
+
