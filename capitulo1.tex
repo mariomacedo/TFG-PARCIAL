@@ -2,39 +2,28 @@
 \label{cap:cap1}
 \par
 Uma tendência que vem sendo observada é a tentativa de aproximação entre os cidadãos e seus governantes, um exemplo disso são as iniciativas de governos abertos.
-A agenda de 2030 da \acrfull{onu} para a transformação do mundo através do desenvolvimento sustentável, deixa claro em seu parágrafo 48 que:
+A agenda de 2030 da \acrfull{onu} para a transformação do mundo através do desenvolvimento sustentável, deixa claro, em seu parágrafo 48, que
+indicadores estão sendo desenvolvidos para ajudar nesse trabalho de aproximar governo e cidadão. Dados desagregados de qualidade, acessíveis,
+atualizados e confiáveis serão necessários para colaborar com a análise do progresso das iniciativas sobre participação. 
+Esses dados são de suma importância para a tomada de decisões \cite{assembly2015transforming}.
 
-\hspace{4cm}
-\begin{minipage}{.66\textwidth}		
-    \begin{singlespace}
-        \fontsize{10}{12}\selectfont Indicadores estão sendo desenvolvidos para ajudar neste trabalho. Dados desagregados de qualidade, acessíveis, 
-        atualizados e confiáveis serão necessários para ajudar na medição do progresso e para garantir que ninguém seja deixado para trás. 
-        Esses dados são a chave para a tomada de decisões. Dados e informações disponíveis em mecanismos de comunicação devem ser usados sempre que possível.
-        \cite{assembly2015transforming}
-        \end{singlespace}
-\end{minipage}
-\vspace{0.3CM}
-
-A \acrshort{onu} também define o conceito de participação eletrônica como "o processo de engajar cidadãos através de \acrfull{tic} em política, tomadas de decisão e
-serviços públicos, fazendo com isso que este processo seja inclusivo, participativo e deliberado". Sendo assim, o uso de ferramentas de participação eletrônica torna-se
-fundamental para o cumprimento das metas traçadas em 2015. 
+\par
+A \acrshort{onu} define o conceito de participação eletrônica como "o processo de engajar cidadãos através de \acrfull{tic} em política, tomadas de decisão e
+serviços públicos, fazendo com que este processo seja inclusivo, participativo e deliberado". Sendo assim, \citeonline{braga2016participaccao} mostra
+que o uso de ferramentas de participação eletrônica torna-se fundamental para o cumprimento das metas traçadas em 2015. 
 
 %==================================================================================================================================================================================================
 %Motivação (quantidade de recursos relacionados à participação eletrônica)
-\section{Motivação}
-\label{sec:motivacao}
 \par
-A \acrfull{ocde}, juntamente com a \acrshort{onu} e a \acrfull{ue} criaram \textit{frameworks} para a avaliação das ferramentas através de indicadores. 
-Atualmente, governantes podem encontrar diretrizes para seguir na hora de desenvolver uma atividade de participação eletrônica.
-
-\par
-Contudo, não foi encontrada uma taxonomia focada em classificar as ferramentas de participação, justificando assim, a elaboração deste trabalho.
+A \acrfull{ocde}, juntamente com a \acrshort{onu} e a \acrfull{ue} criaram \textit{frameworks} para a avaliação do \textit{status} do governo eletrônico,
+através de indicadores \cite{onu2018}. A metodologia utilizada permite medir a eficácia do governo eletrônico na prestação de serviços públicos 
+e identificar padrões de desenvolvimento e desempenho.
+Atualmente, governantes podem encontrar diretrizes para seguir na hora de desenvolver uma ferramenta de participação eletrônica. 
+Por exemplo o trabalho de \citeonline{scherer2010hands}, que demonstra a metodologia utilizada para a criação de duas ferramentas de participação eletrônica, a VoicE e a VoiceS, na Europa.
 
 %==================================================================================================================================================================================================
 %Justificativa (uma classificação pode apoiar o entendimento nessa área)
-\section{Justificativa}
-\label{sec:justificativa}
-Através da \acrfull{ice}, \citeonline{kinyik2015guideline} apresenta um modelo de classificação de ferramentas de participação eletrônica
+Por incentivo do projeto \acrfull{e-uropa}, \citeonline{kinyik2015guideline} apresenta um modelo de classificação de ferramentas de participação eletrônica,
 representado na Tabela \ref{tab:classificacao}. 
 \addtocounter{table}{-1}
 \begin{table}[!ht]
@@ -43,9 +32,10 @@ representado na Tabela \ref{tab:classificacao}.
     \label{tab:classificacao}
     \begin{tabular}{l*{2}{>{\raggedright\arraybackslash}p{0.5\linewidth}}}
     \toprule
-        Nome                             \\ 
+        Nome                             \\
     \midrule
         Abordagem                        \\
+        \midrule
         Nível de Engajamento             \\
         Estágios das políticas           \\
         Tempo de duração                 \\
@@ -61,73 +51,21 @@ representado na Tabela \ref{tab:classificacao}.
 \end{table}
 \newpage
 
+\acrshort{e-uropa} tem o objetivo de aumentar e disseminar o conhecimento, nos cidadãos europeus, sobre ferramentas de participação eletrônica, alegando que 
+fazendo assim, as demandas da sociedade seriam melhores e mais rapidamente atendidas.
+
 %==================================================================================================================================================================================================
 %Objetivo do seu trabalho (ferramenta que apoia a edição colaborativa da taxonomia)
-\section{Objetivo}
-\label{sec:objetivo}
-Este projeto tem o objetivo de modelar, desenvolver e implementar uma aplicação \textit{web} para apoiar a edição colaborativa de uma taxonomia sobre ferramentas
+Sendo assim, este projeto tem o objetivo de modelar, desenvolver e implementar uma aplicação \textit{web} para apoiar a edição colaborativa de uma taxonomia sobre ferramentas
 de participação eletrônica. A aplicação permitirá a interação dos usuários de maneira intuitiva e amigável, colaborando para a edição das informações apresentadas.
+Essa aplicação apresentará tanto a taxonomia, quanto as ferramentas de participação eletrônica classificadas pelos usuários.
 
 %==================================================================================================================================================================================================
 %Contribuições (prático (gestor e cidadão comum) e pesquisador)
-\section{Contribuições}
-\label{sec:contribuicoes}
 Espera-se construir uma ferramenta que contribua tanto no âmbito teórico quanto no âmbito prático do assunto abordado. 
 \par
 No que diz respeito ao campo teórico, é desejado que a ferramenta possa ajudar os pesquisadores a entender mais sobre ferramentas de participação eletrônica e suas classificações. 
 Espera-se que com a utilização de critérios bem estabelecidos pela literatura atual, o entendimento da classificação taxonômica gerada seja facilitado.
 \par
-Reciprocamente, tem como intenção que tanto o gestor público, quanto o cidadão comum, possam fazer uso da aplicação quando necessitarem escolher uma ou mais ferramentas de participação
+Por outro lado, tanto para o gestor público, quanto para o cidadão comum, o uso da aplicação pode facilitar a escolha de uma ou mais ferramentas de participação
 eletrônica. Essa escolha poderá levar em conta critérios isolados ou um aglomerado de critérios, dependendo da demanda do usuário.
-
-%==================================================================================================================================================================================================
-%Estrutura da monografia
-\section{Organização do trabalho}
-\label{sec:organizacao}
-No desenvolvimento deste trabalho, uma aplicação será implementada para representar a taxonomia desenvolvida no contexto do projeto VisPublica.
-Um experimento de validação será realizado para a análise sobre a utilização da taxonomia na tomada de decisão sobre as ferramentas de participação eletrônica.
-Na Tabela \ref{tab:cronograma} estão as atividades previstas para a conclusão do trabalho, 
-\begin{enumerate}
-    \begin{singlespace}
-    \fontsize{10}{12}\selectfont 
-    \item\label{revisao}Revisão Bibliográfica
-    \item\label{requisitos} Levantamento de requisitos funcionais do sistema
-    \item\label{prototipo} Protótipo não funcional do sistema
-    \item\label{modelagem} Modelagem do sistema
-    \item\label{dev} Desenvolvimento e codificação
-    \item\label{teste} Testes iniciais
-    \item\label{validacao} Validação do sistema
-    \item\label{expo} Exposição dos Resultados
-    \end{singlespace}
-\end{enumerate}
-
-\definecolor{midgray}{RGB}{90,90,90}
-\begin{table}[!ht]
-\caption{Cronograma de Atividades}
-\label{tab:cronograma}
-\centering
-    \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    &\multicolumn{5}{c|}{2018}\\
-    \hline
-    &AGO&SET&OUT&NOV&DEZ\\
-    \hline
-    \ref{revisao}&\cellcolor{midgray}&&&&\\
-    \hline
-    \ref{requisitos}&\cellcolor{midgray}&\cellcolor{midgray}&&&\\
-    \hline	
-    \ref{prototipo}&&\cellcolor{midgray}&&&\\
-    \hline			
-    \ref{modelagem}&&\cellcolor{midgray}&\cellcolor{midgray}&&\\
-    \hline	
-    \ref{dev}&&\cellcolor{midgray}&\cellcolor{midgray}&\cellcolor{midgray}&\\
-    \hline
-    \ref{teste}&&&&\cellcolor{midgray}&\\
-    \hline	
-    \ref{validacao}&&&&\cellcolor{midgray}&\\
-    \hline	
-    \ref{expo}&&&&\cellcolor{midgray}&\cellcolor{midgray}\\
-    \hline
-    \end{tabular}
-\end{table}
-\vfill
